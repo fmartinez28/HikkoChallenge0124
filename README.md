@@ -60,5 +60,5 @@ Si se requiere testear con un conjunto de datos diferente al originalmente propu
     "users_following": ["2", "3"]
 }
 ```
-Se deben remplazar los jsons en el directorio ```/hikko_challenge_project/users/migrations/data/``` con el nuevo conjunto. Consecuentemente, se deben eliminar las migraciones, eliminar y recrear la base de datos, y finalmente, aplicar nuevamente las migraciones con 
+Se deben remplazar los jsons en el directorio ```/hikko_challenge_project/users/migrations/data/``` con el nuevo conjunto. Consecuentemente, se debe eliminar y volver a crear la base de datos (otra posibilidad podría ser simplemente droppear la tabla de users), y finalmente, aplicar nuevamente las migraciones con 
 ```python3 hikko_challenge_project/manage.py migrate```
