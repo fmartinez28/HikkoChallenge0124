@@ -51,3 +51,14 @@ Formato de cuerpo de respuesta:
 "amount_of_followers": 0
 }
 ```
+
+## Opcional
+Si se requiere testear con un conjunto de datos diferente al originalmente propuesto, pero siguiendo el mismo formato de usuarios de:
+```json
+{
+    "user_id": "1",
+    "users_following": ["2", "3"]
+}
+```
+Se deben remplazar los jsons en el directorio ```/hikko_challenge_project/users/migrations/data/``` con el nuevo conjunto. Consecuentemente, se deben eliminar las migraciones, eliminar y recrear la base de datos, y finalmente, aplicar nuevamente las migraciones con 
+```python3 hikko_challenge_project/manage.py migrate```
